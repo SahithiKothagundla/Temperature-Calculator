@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0"/>
+        <title>Temperature calculator</title>
+        <!---css links-->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!--box icons-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+        <!--fontawesome cdn links-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9NBvH0h/ZpiBw==" crosserigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="temperature-calculator">
+                <!--mobile icon-->
+                <div class="mobile">
+                    <p>10.00 AM</p>
+                    <div>
+                       <i class='bx bx-signal-4'></i>
+                       <i class='bx bx-wifi'></i>
+                       <i class='bx bxs-battery'></i>
+
+                    </div>
+                </div>
+              <h2 class="title">Temperature Calculator</h2>
+              <!--showing result here-->
+                      <div class="result">
+                         <span class="result-heading">Result(Celsius)</span>
+                         <h2 class="celsius-value" id="celsius">1</h2>
+                      </div>
+                      <!--input type-->
+                      <div class="degree-type">
+                        <!--for degrees-->
+                        <div class="degree-field">
+                            <label for="degree">Degrees</label>
+                            <input type="number" name="degree" id="degree">
+                        </div>
+                        <!--option selection-->
+                       <div class="temp-field">
+                        <label for="temp-type">Type</label>
+                        <select name="temperatures" id="temp-type" autocomplete="on">
+                            <option value="fahrenheit" id="fahrenheit">fahrenheit</option>
+                            <option value="kelvin" id="kelvin">kelvin</option>
+                        </select>
+                       </div> 
+                            <button id="convert-btn">Convert</button>
+                    </div>
+                 </div>
+            </div>
+            <script src="js/page.js"></script>
+        </body>
+</html>
